@@ -6,6 +6,8 @@ from app.weather_service import get_hourly_forecasts
 
 weather_routes = Blueprint("weather_routes", __name__)
 
+
+#http://localhost:5000/weather/forecast.json?country_code=US&zip_code=28173
 @weather_routes.route("/weather/forecast.json")
 def weather_forecast_api():
     print("WEATHER FORECAST (API)...")
