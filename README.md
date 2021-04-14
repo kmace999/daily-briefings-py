@@ -90,4 +90,10 @@ CI=true pytest
 
 Follow the deployment instructions to deploy the app to a remote server and schedule the server to send you the weather forecast email every day.
 
+# mac:
+FLASK_APP=web_app flask run
+# windows:
+export FLASK_APP=web_app
+flask run
+
 ## [License](/LICENSE.md)
